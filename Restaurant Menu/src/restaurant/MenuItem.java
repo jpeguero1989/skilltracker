@@ -3,22 +3,22 @@ package restaurant;
 import java.util.Objects;
 
 public class MenuItem {
-    private int Id;
     private boolean isNew;
     private double price;
     private String description;
     private String category;
 
-    public int getId() {
-        return Id;
-    }
-
-    public void setId(int id) {
-        Id = id;
-    }
-
     public void setNew(boolean aNew) {
         isNew = aNew;
+    }
+
+    @Override
+    public String toString() {
+        return  "isNew=" + isNew +
+                ", price=" + price +
+                ", description='" + description + '\'' +
+                ", category='" + category + '\'' +
+                '}';
     }
 
     public MenuItem(boolean isNew, double price, String description, String category) {
@@ -69,11 +69,6 @@ public class MenuItem {
     public int hashCode() {
         return Objects.hash(description, category);
     }
-
-//    public boolean isItemNew()
-//    {
-//        return isNew;
-//    }
 
 
 }

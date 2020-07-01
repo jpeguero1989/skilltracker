@@ -29,7 +29,9 @@ public class Restaurant {
         myMenu.addItem(item8);
         myMenu.addItem(item9);
 
-        myMenu.printItem(item5);
+        myMenu.removeItem(true,25.58,"fried chicken8","entry8");
+
+        myMenu.printItems();
         System.out.println(myMenu.getItems().size());
 
         myMenu.removeItem(item2);
