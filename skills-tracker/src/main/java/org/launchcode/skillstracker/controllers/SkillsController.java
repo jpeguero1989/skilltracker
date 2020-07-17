@@ -45,6 +45,7 @@ public class SkillsController {
                 "</html>";
     }
 
+
     @GetMapping("form")
     @ResponseBody
     public static String languagesForm()
